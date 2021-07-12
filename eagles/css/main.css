@@ -1,0 +1,210 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{}
+body{
+    
+  width: 100vw;
+  height: 100vh;
+  background-color:#222426;
+  /* background: url(/images/bg.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Garamond, sans-serif;
+  font-size: 35px;
+  list-style: none;  
+  /* overflow:hidden; */
+  
+}
+
+a{
+  text-decoration: none; 
+  color: #aaaaaa;    
+}
+ .wrapper{
+  position: absolute;
+  transform: scale(0.7);
+  left:-5%;
+  top:-5%; 
+  width: 1920px; 
+  height: 1080px;    
+  
+}
+
+header {
+  width: inherit;
+  height: 198px;
+  /* background-color:aqua; */
+  display:flex;  
+  align-items:center;  
+ }
+
+.container-logo .logo{
+  display: block;
+  width: 225px;
+  height: 111px; 
+  margin-left: 115px;
+  margin-right:115px;   
+  background: url(/images/logo_vintsound.png);
+  
+} 
+header .container {
+  min-width: 634px;
+  height: 50%;
+  /* background-color:bisque; */
+  margin: 0 auto;   
+  display: flex;
+  align-items: center;
+}
+ header .container .items {
+  display: flex;       
+  }
+ header .container .items li a {
+   height:100%;
+   position: relative;
+   /* background-color: orange; */
+   margin-right: 101px;
+   transition: color .2s;
+   display: block;
+   margin-bottom: 18px;   
+ }
+
+ header .container .items .eagles {
+   margin-right: 0px;
+ }
+ 
+ header .container .items li a:hover {
+  color: #fdd931;
+}
+
+header .container .items li a::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width:0;
+  height: 4px;
+  background: #fdd931;
+  transition: all .5s;
+}
+
+header .container .items li a:hover::after{
+  width: 170px;
+}
+
+header .container .items li:nth-child(5) a {
+  pointer-events: none;
+  color: #3290C6;  
+}
+
+header .container .items li:nth-child(4) a:hover::after{
+  width: 203px;
+}
+
+/* header .container .items li:nth-child(5) a:hover::after{
+  width: 124px;
+} */
+
+section {
+  display: flex;
+  /* position:relative; */
+  width: 100%;
+  height: 806px;
+  /* background-color:turquoise; */
+}
+
+section .table-wrapper {
+  width:1056px;
+  height:806px;
+  /* background-color:violet;   */
+}
+section .table-wrapper td {
+  background:url(../images/eagles_background.png);
+}
+
+.eagles-main{
+  position:absolute;  
+  width:1056px;
+  height:889px;
+  background:url(../images/eagles_main.png);
+  left:0;
+  bottom:0;  
+}
+.text-wrapper{
+  position: relative;
+  width: 732px;
+  height: 100%;
+  /* background-color: burlywood; */
+  margin-left: 58px;
+}
+
+h1{
+  width: 732px;
+  height: 120px;
+  /* margin-left: 58px; */
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.01 em;
+  color: #e5e5e5;  
+}
+
+p{
+  position: absolute;
+  width: 696px;
+  height: 214px;
+  left: 8px;
+  top: 206px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 34px;
+  color: #aaaaaa;  
+}
+/* YOUTUBE VIDEO */
+.youtube {
+  
+}
+
+.youtube .youtube__area {
+  width: 650px;
+  height: calc(650px*0.5625);
+  /* background-color: orange; */
+  position: absolute;
+  /* top: 440px; */
+  bottom:0px;
+    /*margin-left: 50%;
+  transform:translateX(-50%);*/  
+  left: 10px;
+  display:flex;  
+}
+
+ iframe {
+   width: 650px;
+   height: auto;
+ }
+ 
+/* section_end */
+
+.fade-in{
+  opacity: 0;
+}
+
+footer{
+  position:relative;
+  /* background:teal; */
+  height:132px;
+}
+footer .copyright{
+  display: block;
+  position: absolute;
+  right: 80px;
+  bottom: 80px;
+  font-size: 28px;
+  color: #888888;
+  letter-spacing: 0.02em;
+}
